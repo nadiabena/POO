@@ -11,7 +11,7 @@
 		}
 
 		public function checkInteger($number){
-			return is_int()$number;
+			return is_int($number);
 		}
 
 		public function checkFloat($number){
