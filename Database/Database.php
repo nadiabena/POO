@@ -6,7 +6,7 @@
 		public function connexion($database, $login, $password){
 			try{
 				// On se connecte à MySQL
-				$this->bdd = new PDO('mysql:host=localhost;dbname='.$$database.';charset=utf8', $bdd->quote($login), $bdd->quote($password));
+				$this->bdd = new PDO('mysql:host=localhost;dbname='.$database.';charset=utf8', $bdd->quote($login), $bdd->quote($password));
 				$this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$this->bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);				
 			}catch(Exception $e){
