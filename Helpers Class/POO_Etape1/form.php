@@ -18,12 +18,12 @@
 			return $this->nom;
 		}
 
-		public function getprenom(){
-			return $this->action;
+		public function getPrenom(){
+			return $this->prenom;
 		}
 
-		public function setAction(){
-			$this->action;
+		public function setAction($action){
+			$this->action = $action;
 		}
 
 		public function setNom($nom){
@@ -31,7 +31,7 @@
 		}
 
 		public function setPrenom($pre){
-			$this->prenom;
+			$this->prenom = $pre;
 		}
 
 		public function create($action){
